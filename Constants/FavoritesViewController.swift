@@ -74,8 +74,8 @@ class FavoritesViewController: UIViewController, UITableViewDataSource, UITableV
         
         self.tabBarController?.navigationItem.title = "Favorites"
         
-        var rightButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "exportPDF")
-        self.tabBarController?.navigationItem.rightBarButtonItem = rightButton
+        //var rightButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "exportPDF")
+        self.tabBarController?.navigationItem.rightBarButtonItem = nil
         
         
         //var userDefaults: NSUserDefaults = NSUserDefaults(suiteName: "group.Sean-Hoyt.EmergencyContacts")!

@@ -264,7 +264,7 @@ class ConstantViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     
-    @IBAction func generatePDF(sender: AnyObject) {
+    /*@IBAction func generatePDF(sender: AnyObject) {
         
         let pageSize:CGSize = CGSizeMake (850, 1100)
         let fileName: NSString = "xp.pdf"
@@ -293,7 +293,7 @@ class ConstantViewController: UIViewController, UITableViewDataSource, UITableVi
         let rect:CGRect = CGRectMake(0, 0, 850, 1100)
         CGContextSetFillColorWithColor(context, UIColor.greenColor().CGColor)
         CGContextFillRect(context, rect)
-    }
+    }*/
 
 
 
