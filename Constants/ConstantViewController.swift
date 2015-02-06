@@ -220,8 +220,8 @@ class ConstantViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewWillAppear(animated: Bool) {
     
-        
-       // self.navigationItem.leftBarButtonItem = nil
+        self.tabBarController?.navigationItem.title = "Constants Dictionary"
+       self.tabBarController?.navigationItem.rightBarButtonItem = nil
         
         if var storedConstants: AnyObject = NSUserDefaults.standardUserDefaults().objectForKey("temp"){
             
@@ -261,6 +261,40 @@ class ConstantViewController: UIViewController, UITableViewDataSource, UITableVi
         }
 
     }
+    
+    
+    
+    @IBAction func generatePDF(sender: AnyObject) {
+        
+        let pageSize:CGSize = CGSizeMake (850, 1100)
+        let fileName: NSString = "xp.pdf"
+        let path:NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentDirectory: AnyObject = path.objectAtIndex(0)
+        let pdfPathWithFileName = documentDirectory.stringByAppendingPathComponent(fileName)
+        
+        generatePDFs(pdfPathWithFileName)
+        
+    }
+    
+    func generatePDFs(filePath: String) {
+        UIGraphicsBeginPDFContextToFile(filePath, CGRectZero, nil)
+        UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, 850, 1100), nil)
+        drawBackground()
+        UIGraphicsEndPDFContext()
+        
+        
+        
+        
+    }
+    
+    func drawBackground () {
+        
+        let context:CGContextRef = UIGraphicsGetCurrentContext()
+        let rect:CGRect = CGRectMake(0, 0, 850, 1100)
+        CGContextSetFillColorWithColor(context, UIColor.greenColor().CGColor)
+        CGContextFillRect(context, rect)
+    }
+
 
 
    

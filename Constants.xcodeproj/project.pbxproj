@@ -13,6 +13,7 @@
 		E63C6FB41A211E3600DF214F /* ConstantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C6FB31A211E3600DF214F /* ConstantViewController.swift */; };
 		E64400BB1A48EE3E0028BD64 /* LifeSavers-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64400B91A48EE3E0028BD64 /* LifeSavers-Bold.ttf */; };
 		E64400BC1A48EE3E0028BD64 /* LifeSavers-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64400BA1A48EE3E0028BD64 /* LifeSavers-Regular.ttf */; };
+		E665D88E1A854BD700185FE7 /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = E665D88D1A854BD700185FE7 /* selected.png */; };
 		E6862ED81A212A680020313D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6862ED71A212A680020313D /* FavoritesViewController.swift */; };
 		E68F53DD1A215E1A000DE1BE /* CreateConstantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F53DC1A215E1A000DE1BE /* CreateConstantViewController.swift */; };
 		E69B6D471A3D69D8005B95A7 /* ProximaNovaSoft-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E69B6D461A3D69D8005B95A7 /* ProximaNovaSoft-Bold.otf */; };
@@ -41,6 +42,7 @@
 		E63C6FB31A211E3600DF214F /* ConstantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantViewController.swift; sourceTree = "<group>"; };
 		E64400B91A48EE3E0028BD64 /* LifeSavers-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LifeSavers-Bold.ttf"; path = "../LifeSavers-Bold.ttf"; sourceTree = "<group>"; };
 		E64400BA1A48EE3E0028BD64 /* LifeSavers-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LifeSavers-Regular.ttf"; path = "../LifeSavers-Regular.ttf"; sourceTree = "<group>"; };
+		E665D88D1A854BD700185FE7 /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
 		E6862ED71A212A680020313D /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		E68F53DC1A215E1A000DE1BE /* CreateConstantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateConstantViewController.swift; sourceTree = "<group>"; };
 		E69B6D461A3D69D8005B95A7 /* ProximaNovaSoft-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Bold.otf"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				E64400BA1A48EE3E0028BD64 /* LifeSavers-Regular.ttf */,
 				E69B6D461A3D69D8005B95A7 /* ProximaNovaSoft-Bold.otf */,
 				E68F53DC1A215E1A000DE1BE /* CreateConstantViewController.swift */,
+				E665D88D1A854BD700185FE7 /* selected.png */,
 				E6862ED71A212A680020313D /* FavoritesViewController.swift */,
 				E6BF1C9E1A2120A800E0AF4A /* ConstantDetailViewController.swift */,
 				E63C6FB31A211E3600DF214F /* ConstantViewController.swift */,
@@ -208,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E665D88E1A854BD700185FE7 /* selected.png in Resources */,
 				E64400BC1A48EE3E0028BD64 /* LifeSavers-Regular.ttf in Resources */,
 				E69B6D491A3E4207005B95A7 /* Images.xcassets in Resources */,
 				E64400BB1A48EE3E0028BD64 /* LifeSavers-Bold.ttf in Resources */,

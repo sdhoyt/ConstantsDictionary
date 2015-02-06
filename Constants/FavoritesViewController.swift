@@ -72,6 +72,12 @@ class FavoritesViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewWillAppear(animated: Bool) {
         
+        self.tabBarController?.navigationItem.title = "Favorites"
+        
+        var rightButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "exportPDF")
+        self.tabBarController?.navigationItem.rightBarButtonItem = rightButton
+        
+        
         //var userDefaults: NSUserDefaults = NSUserDefaults(suiteName: "group.Sean-Hoyt.EmergencyContacts")!
         if var storedFavorites: AnyObject = NSUserDefaults.standardUserDefaults().objectForKey("favorites"){
             

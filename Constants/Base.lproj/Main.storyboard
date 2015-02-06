@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="52t-Cl-D5z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="52t-Cl-D5z">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="ProximaNovaSoft-Bold.otf">
-            <string>ProximaNovaSoft-Bold</string>
             <string>ProximaNovaSoft-Bold</string>
             <string>ProximaNovaSoft-Bold</string>
             <string>ProximaNovaSoft-Bold</string>
@@ -79,20 +78,6 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsw-gP-lAL">
-                                <rect key="frame" x="26" y="325" width="548" height="46"/>
-                                <color key="backgroundColor" red="0.96470588239999999" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="mKB-7e-P3O"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ProximaNovaSoft-Bold" family="Proxima Nova Soft" pointSize="18"/>
-                                <state key="normal" title="Create Constant">
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="createConstant:" destination="pvZ-Vf-Vuh" eventType="touchUpInside" id="V49-38-zin"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Alternate Value 3" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="eNc-VI-yjM">
                                 <rect key="frame" x="10" y="265" width="580" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,8 +152,6 @@
                             <constraint firstItem="2av-nI-Kxf" firstAttribute="top" secondItem="eGi-9Z-bIq" secondAttribute="bottom" constant="48" id="8Q2-Ax-yti"/>
                             <constraint firstItem="J5x-NV-TfY" firstAttribute="top" secondItem="HMk-Rp-3ge" secondAttribute="bottom" constant="20" id="A5U-hv-eft"/>
                             <constraint firstItem="eNc-VI-yjM" firstAttribute="top" secondItem="2av-nI-Kxf" secondAttribute="bottom" constant="48" id="AOc-7I-1VP"/>
-                            <constraint firstItem="Zsw-gP-lAL" firstAttribute="leading" secondItem="GB0-5K-sjj" secondAttribute="leadingMargin" constant="10" id="ArY-aH-NTA"/>
-                            <constraint firstItem="Zsw-gP-lAL" firstAttribute="top" secondItem="eNc-VI-yjM" secondAttribute="bottom" constant="10" id="BJ3-gV-fev"/>
                             <constraint firstItem="eGi-9Z-bIq" firstAttribute="leading" secondItem="GB0-5K-sjj" secondAttribute="leading" constant="10" id="FKz-4N-JyM"/>
                             <constraint firstAttribute="trailing" secondItem="JOy-zu-li6" secondAttribute="trailing" constant="10" id="Jff-bh-Ka6"/>
                             <constraint firstItem="Dyi-6b-0Ok" firstAttribute="top" secondItem="JOy-zu-li6" secondAttribute="bottom" constant="48" id="PID-GR-rYP"/>
@@ -178,9 +161,7 @@
                             <constraint firstAttribute="trailing" secondItem="eGi-9Z-bIq" secondAttribute="trailing" constant="10" id="ghy-7G-6gv"/>
                             <constraint firstAttribute="trailing" secondItem="2av-nI-Kxf" secondAttribute="trailing" constant="10" id="hPm-bX-b7w"/>
                             <constraint firstItem="JOy-zu-li6" firstAttribute="leading" secondItem="GB0-5K-sjj" secondAttribute="leading" constant="10" id="imA-SV-0aS"/>
-                            <constraint firstItem="Zsw-gP-lAL" firstAttribute="leading" secondItem="GB0-5K-sjj" secondAttribute="leadingMargin" constant="10" id="itp-wp-o7A"/>
                             <constraint firstAttribute="trailing" secondItem="eNc-VI-yjM" secondAttribute="trailing" constant="10" id="lfM-Lt-jfy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Zsw-gP-lAL" secondAttribute="trailing" constant="10" id="nkf-Ei-ESE"/>
                             <constraint firstAttribute="trailing" secondItem="J5x-NV-TfY" secondAttribute="trailing" constant="10" id="pQL-pP-8Ru"/>
                             <constraint firstItem="eNc-VI-yjM" firstAttribute="leading" secondItem="GB0-5K-sjj" secondAttribute="leading" constant="10" id="rdz-XN-QLc"/>
                             <constraint firstItem="2av-nI-Kxf" firstAttribute="leading" secondItem="GB0-5K-sjj" secondAttribute="leading" constant="10" id="stS-1x-fU8"/>
@@ -191,7 +172,6 @@
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="createConstantButton" destination="Zsw-gP-lAL" id="6Aj-LS-0GC"/>
                         <outlet property="createdConstantNameTextField" destination="J5x-NV-TfY" id="ciA-2V-6Ya"/>
                         <outlet property="createdConstantSymbolTextField" destination="eGi-9Z-bIq" id="gyf-Ls-zaw"/>
                         <outlet property="createdConstantValueTextField" destination="JOy-zu-li6" id="Ha6-XY-cTc"/>
@@ -444,6 +424,6 @@
         <image name="coordinates" width="31" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fX6-Ye-weJ"/>
+        <segue reference="mGC-zL-MDc"/>
     </inferredMetricsTieBreakers>
 </document>

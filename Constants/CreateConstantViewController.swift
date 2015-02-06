@@ -23,7 +23,7 @@ class CreateConstantViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var createdOtherUnits2TextField: UITextField!
     @IBOutlet weak var createdOtherUnits3TextField: UITextField!
     
-    @IBOutlet weak var createConstantButton: UIButton!
+  
     
     
     
@@ -55,9 +55,18 @@ class CreateConstantViewController: UIViewController, UITextFieldDelegate{
         createdOtherUnits3TextField.tintColor = UIColor(red: 0.965 , green: 0.333, blue: 0.333, alpha: 1.0)
         
         
-        createConstantButton.layer.cornerRadius = 5.0
-        // Do any additional setup after loading the view, typically from a nib.
         
+        
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        var check :UIImage = UIImage(named: "icon.png")!
+        self.tabBarController?.navigationItem.title = "Create"
+        
+        var rightButton: UIBarButtonItem = UIBarButtonItem( image: check, style:UIBarButtonItemStyle.Bordered, target: self, action: "addConstant")
+        self.tabBarController?.navigationItem.rightBarButtonItem = rightButton
         
     }
     
@@ -67,7 +76,7 @@ class CreateConstantViewController: UIViewController, UITextFieldDelegate{
     }
     
     
-    @IBAction func createConstant(sender: AnyObject) {
+    func addConstant() {
         
         if  (createdConstantNameTextField.text == "" &&
             createdConstantValueTextField.text == "" &&
